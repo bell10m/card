@@ -8,17 +8,15 @@
     <style>
         body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 20px; margin: 0; }
         
-        /* تعديل الصورة لتظهر كاملة بدون قص */
+        /* إصلاح الصورة لتظهر كاملة وبدون قص من الأعلى */
         .profile-img { 
-            width: 85%; 
+            width: 90%; 
             max-width: 280px; 
             height: auto; 
             border-radius: 25px; 
             margin-top: 20px; 
             border: 2px solid #333;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            object-fit: contain; /* يضمن عدم قص أي جزء من الصورة */
         }
         
         .name { font-size: 26px; font-weight: bold; margin: 20px 0 10px; }
@@ -34,12 +32,12 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            font-size: 30px; 
+            font-size: 32px; 
             text-decoration: none; 
             border: 1px solid #333; 
         }
 
-        /* استعادة الألوان الرسمية للأيقونات */
+        /* تلوين الأيقونات بالألوان الرسمية */
         .phone { color: #4CAF50; }
         .whatsapp { color: #25D366; }
         .facebook { color: #1877F2; }
@@ -59,17 +57,17 @@
     <div class="bio-box">
         مهندس برمجيات | متخصص في الحلول التقنية
         <br>
-        يمكنم التواصل معي عبر المنصات التالية
+        يسعدني تواصلكم معي عبر المنصات التالية
     </div>
 
     <div class="social-grid">
         <a href="tel:777992282" class="icon-card"><i class="fas fa-phone phone"></i></a>
         <a href="https://wa.me/967777992282" class="icon-card"><i class="fab fa-whatsapp whatsapp"></i></a>
         <a href="https://www.facebook.com/share/182spPLUE9/" class="icon-card"><i class="fab fa-facebook facebook"></i></a>
-        <a href="https://www.instagram.com/https://www.instagram.com/h9mzah?igsh=cGhjcnNlNzZ5eGxk class="icon-card"><i class="fab fa-instagram instagram"></i></a>
-
+        
+        <a href="https://www.instagram.com/H9MZAH/" target="_blank" class="icon-card"><i class="fab fa-instagram instagram"></i></a>
+        
         <a href="https://www.snapchat.com/add/h9mzh" class="icon-card"><i class="fab fa-snapchat snapchat"></i></a>
-
         <a href="https://t.me/alhamzah98" class="icon-card"><i class="fab fa-telegram telegram"></i></a>
     </div>
 
