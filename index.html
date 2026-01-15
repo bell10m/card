@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بطاقة المهندس حمزة</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 20px; margin: 0; }
+        
+        /* تنسيق الصورة (مثل الكود الأول) */
         .profile-img { width: 220px; height: auto; border-radius: 20px; margin-top: 30px; border: 3px solid #333; }
+        
         .name { font-size: 26px; font-weight: bold; margin: 20px 0 10px; }
-        .bio-box { background: #1a1a1a; padding: 15px; border-radius: 15px; margin: 10px auto 30px; width: 80%; border: 1px solid #333; line-height: 1.6; } /* تنسيق الشبكة: 3 أعمدة */
+        
+        /* صندوق النبذة (مثل الكود الأول) */
+        .bio-box { background: #1a1a1a; padding: 15px; border-radius: 15px; margin: 10px auto 30px; width: 85%; border: 1px solid #333; line-height: 1.6; font-size: 15px; }
+
+        /* شبكة الأيقونات (3 في كل سطر كما طلبت) */
         .social-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -22,30 +29,40 @@
         .icon-card { 
             background: #1a1a1a; 
             aspect-ratio: 1/1; 
-            border-radius: 12px; 
+            border-radius: 15px; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            font-size: 28px; /* حجم الأيقونة */
-            color: white; 
+            font-size: 32px; 
             text-decoration: none; 
             border: 1px solid #333;
             transition: 0.3s;
         }
 
-        /* ألوان الشعارات الحقيقية */
+        /* ألوان الأيقونات الرسمية */
+        .phone { color: #4CAF50; }
         .whatsapp { color: #25D366; }
         .facebook { color: #1877F2; }
         .instagram { color: #E4405F; }
-        .snapchat { color: #FFFC00; }
+        .snapchat { color: #FFFC00; text-shadow: 0 0 2px black; }
         .telegram { color: #0088cc; }
-        .phone { color: #4CAF50; }
-        
-        .icon-card:active { transform: scale(0.9); background: #333; }
+
+        .icon-card:active { transform: scale(0.9); background: #222; }
     </style>
 </head>
 <body>
-          <div class="social-grid">
+
+    <img src="me.jpg" class="profile-img"> 
+    
+    <div class="name">المهندس<br>حمزة الموتي</div>
+
+    <div class="bio-box">
+        مهندس برمجيات | متخصص في الحلول التقنية
+        <br>
+        يسعدني تواصلكم معي عبر المنصات التالية
+    </div>
+
+    <div class="social-grid">
         <a href="tel:00967777992282" class="icon-card"><i class="fas fa-phone phone"></i></a>
         <a href="https://wa.me/967777992282" class="icon-card"><i class="fab fa-whatsapp whatsapp"></i></a>
         <a href="https://facebook.com/https://www.facebook.com/share/182spPLUE9/" class="icon-card"><i class="fab fa-facebook facebook"></i></a>
@@ -55,7 +72,7 @@
         <a href="https://t.me/alhamzah98" class="icon-card"><i class="fab fa-telegram telegram"></i></a>
     </div>
 
-    <p style="margin-top: 40px; font-size: 10px; color: #444;">&copy; 2026 جميع الحقوق محفوظة     </p>
+    <p style="margin-top: 50px; font-size: 12px; color: #444;">&copy; 2026 جميع الحقوق محفوظة</p>
 
 </body>
 </html>
