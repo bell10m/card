@@ -8,7 +8,6 @@
     <style>
         body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 20px; margin: 0; }
         
-        /* إصلاح الصورة لتظهر كاملة وبدون قص من الأعلى */
         .profile-img { 
             width: 90%; 
             max-width: 280px; 
@@ -16,12 +15,32 @@
             border-radius: 25px; 
             margin-top: 20px; 
             border: 2px solid #333;
-            object-fit: contain; /* يضمن عدم قص أي جزء من الصورة */
+            object-fit: contain; 
         }
         
         .name { font-size: 26px; font-weight: bold; margin: 20px 0 10px; }
         
-        .bio-box { background: #1a1a1a; padding: 15px; border-radius: 15px; margin: 10px auto 30px; width: 85%; border: 1px solid #333; line-height: 1.6; font-size: 15px; }
+        .bio-box { background: #1a1a1a; padding: 15px; border-radius: 15px; margin: 10px auto 20px; width: 85%; border: 1px solid #333; line-height: 1.6; font-size: 15px; }
+
+        /* تنسيق زر لينكد إن العريض */
+        .linkedin-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #0077b5;
+            color: white;
+            text-decoration: none;
+            width: 85%;
+            max-width: 340px;
+            margin: 0 auto 15px;
+            padding: 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .linkedin-btn:active { transform: scale(0.95); }
 
         .social-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 340px; margin: 0 auto; padding: 10px; }
 
@@ -37,7 +56,7 @@
             border: 1px solid #333; 
         }
 
-        /* تلوين الأيقونات بالألوان الرسمية */
+        /* ألوان الأيقونات */
         .phone { color: #4CAF50; }
         .whatsapp { color: #25D366; }
         .facebook { color: #1877F2; }
@@ -59,6 +78,10 @@
         <br>
         يمكنكم التواصل معي عبر المنصات التالية
     </div>
+
+    <a href="https://www.linkedin.com/in/ضع_اليوزر_هنا" target="_blank" class="linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
 
     <div class="social-grid">
         <a href="tel:777992282" class="icon-card"><i class="fas fa-phone phone"></i></a>
